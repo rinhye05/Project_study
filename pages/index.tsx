@@ -52,9 +52,9 @@ const bestCourses: Course[] = [
 ]
 
 const notice = [
-  { label: '공지', text: '2026 수능 대비 모의고사 일정 안내', date: '05.20' },
-  { label: '이벤트', text: '여름방학 특별 패키지 20% 할인 이벤트', date: '05.19' },
-  { label: '공지', text: '6월 모의평가 분석 특강 무료 오픈', date: '05.18' },
+  { label: '공지', text: '7월 TOPIK 시험 접수 일정 안내', date: '05.20' },
+  { label: '이벤트', text: '여름 특별 패키지 전 레벨 20% 할인', date: '05.19' },
+  { label: '공지', text: '비즈니스 한국어 신규 강좌 오픈', date: '05.18' },
   { label: '이벤트', text: '신규 회원 첫 강좌 50% 할인 쿠폰 지급', date: '05.17' },
 ]
 
@@ -91,10 +91,10 @@ export default function Home() {
             </div>
             <div className={styles.quickLinks}>
               {[
-                { icon: '📝', label: '수강신청', sub: '내 강좌 관리' },
-                { icon: '📊', label: '성적분석', sub: 'AI 진단 리포트' },
-                { icon: '📚', label: '교재구매', sub: '강의 교재 할인' },
-                { icon: '🎯', label: '모의고사', sub: '실전 연습' },
+                { icon: null, label: '내 강좌', sub: '수강 현황 관리' },
+                { icon: null, label: '레벨 테스트', sub: '나의 레벨 확인' },
+                { icon: null, label: '교재 구매', sub: 'TOPIK 교재 할인' },
+                { icon: null, label: '모의 TOPIK', sub: '실전 시험 연습' },
               ].map(q => (
                 <a key={q.label} href="#" className={styles.quickItem}>
                   <span className={styles.quickIcon}>{q.icon}</span>

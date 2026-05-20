@@ -3,31 +3,31 @@ import styles from './HeroBanner.module.css'
 
 const banners = [
   {
-    badge: '2025 수능 대비',
-    title: '수능 수학 만점의\n비결을 공개합니다',
-    desc: '현우진 선생님의 킬러문항 완전정복',
+    badge: 'TOPIK II 5-6급 대비',
+    title: '한국어 실력을\n완성하는 강의',
+    desc: 'TOPIK 고득점을 위한 체계적인 커리큘럼',
     cta: '강좌 보러가기',
     sub: '지금 신청 시 10% 할인',
     bg: '#0A1628',
-    accent: '#E8002D',
+    accent: '#C0392B',
   },
   {
     badge: '인기 급상승',
-    title: '영어 1등급을\n만드는 강의',
-    desc: '이명학 선생님의 수능 영어 전략',
+    title: '일상 한국어를\n자연스럽게',
+    desc: '원어민처럼 말하는 회화 집중 훈련',
     cta: '무료 맛보기',
     sub: '3일 무료 수강 가능',
     bg: '#0D2340',
-    accent: '#0066CC',
+    accent: '#2980B9',
   },
   {
     badge: '신규 오픈',
-    title: '국어 비문학\n고득점 전략',
-    desc: '김동욱 선생님의 독해 속도 UP',
+    title: '비즈니스 한국어\n실전 완성',
+    desc: '이메일, 회의, 발표까지 직장 한국어 총정리',
     cta: '강좌 신청',
     sub: '얼리버드 할인 진행 중',
     bg: '#1A0A00',
-    accent: '#FF6B00',
+    accent: '#E67E22',
   },
 ]
 
@@ -51,23 +51,22 @@ export default function HeroBanner() {
           <div className={styles.statsBox}>
             <div className={styles.stat}>
               <span className={styles.statNum}>4.9</span>
-              <span className={styles.statLabel}>★ 평점</span>
+              <span className={styles.statLabel}>평점</span>
             </div>
             <div className={styles.statDivider}/>
             <div className={styles.stat}>
-              <span className={styles.statNum}>12만</span>
+              <span className={styles.statNum}>42K+</span>
               <span className={styles.statLabel}>수강생</span>
             </div>
             <div className={styles.statDivider}/>
             <div className={styles.stat}>
-              <span className={styles.statNum}>98%</span>
-              <span className={styles.statLabel}>재수강률</span>
+              <span className={styles.statNum}>94%</span>
+              <span className={styles.statLabel}>TOPIK 합격률</span>
             </div>
           </div>
         </div>
       </div>
 
-      {/* 도트 인디케이터 */}
       <div className={styles.dots}>
         {banners.map((_, i) => (
           <button

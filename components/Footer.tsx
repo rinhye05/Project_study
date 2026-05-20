@@ -6,7 +6,7 @@ export default function Footer() {
       <div className={`container ${styles.inner}`}>
         <div className={styles.top}>
           <div className={styles.brand}>
-            <div className={styles.logo}><span>MEGA</span>스터디</div>
+            <div className={styles.logo}><span>ARIRANG</span>CLASS</div>
             <p className={styles.tagline}>대한민국 1위 온라인 교육 플랫폼</p>
             <div className={styles.social}>
               {['유튜브', '인스타', '카카오', '네이버'].map(s => (

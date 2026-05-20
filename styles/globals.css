@@ -1,15 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&family=Bebas+Neue&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&family=DM+Sans:wght@400;500;700;900&display=swap');
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --primary: #E8002D;
-  --primary-dark: #C0001F;
-  --primary-light: #FF1A45;
-  --accent: #FF6B00;
-  --navy: #0A1628;
-  --navy-mid: #1A2B4A;
-  --gold: #F5A623;
+  --primary: #C0392B;
+  --primary-dark: #962D23;
+  --primary-light: #E74C3C;
+  --accent: #E67E22;
+  --teal: #16A085;
+  --navy: #1A1A2E;
+  --navy-mid: #16213E;
+  --gold: #F39C12;
+  --topik1-color: #27AE60;
+  --topik2-color: #2980B9;
+  --topik3-color: #8E44AD;
   --text: #1A1A1A;
   --text-muted: #666;
   --text-light: #999;
@@ -18,7 +21,7 @@
   --white: #fff;
   --badge-green: #00B050;
   --badge-blue: #0066CC;
-  --font: 'Noto Sans KR', sans-serif;
+  --font: 'DM Sans', 'Noto Sans KR', sans-serif;
 }
 
 html { font-family: var(--font); font-size: 14px; color: var(--text); }

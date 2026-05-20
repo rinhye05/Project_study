@@ -6,7 +6,8 @@ export type Course = {
   subjectColor: string
   title: string
   instructor: string
-  level: string
+  topikLevel: string
+  levelNum?: string
   price: number
   originalPrice: number
   discount: number
@@ -38,12 +39,12 @@ export default function CourseCard({ course }: Props) {
 
       <div className={styles.body}>
         <div className={styles.meta}>
-          <span className={styles.level}>{course.level}</span>
-          <span className={styles.students}>👥 {course.studentCount}</span>
+          <span className={styles.level}>{course.topikLevel} {course.levelNum}</span>
+          <span className={styles.students}>{course.studentCount}명</span>
         </div>
 
         <h3 className={styles.title}>{course.title}</h3>
-        <p className={styles.instructor}>{course.instructor} 선생님</p>
+        <p className={styles.instructor}>{course.instructor} 강사</p>
 
         <div className={styles.tags}>
           {course.tags.map(tag => (
@@ -77,16 +78,25 @@ export default function CourseCard({ course }: Props) {
 
 function getBg(color: string) {
   const map: Record<string, string> = {
-    '#E8002D': 'linear-gradient(135deg, #1A0610 0%, #2D0A1A 100%)',
-    '#0066CC': 'linear-gradient(135deg, #061228 0%, #0A1F42 100%)',
-    '#FF6B00': 'linear-gradient(135deg, #1A0D00 0%, #2D1600 100%)',
-    '#00B050': 'linear-gradient(135deg, #001A0D 0%, #002D17 100%)',
-    '#7B2FBE': 'linear-gradient(135deg, #120A1A 0%, #1E0E2D 100%)',
+    '#C0392B': 'linear-gradient(135deg, #1A0610 0%, #2D0A1A 100%)',
+    '#2980B9': 'linear-gradient(135deg, #061228 0%, #0A1F42 100%)',
+    '#E67E22': 'linear-gradient(135deg, #1A0D00 0%, #2D1600 100%)',
+    '#27AE60': 'linear-gradient(135deg, #001A0D 0%, #002D17 100%)',
+    '#8E44AD': 'linear-gradient(135deg, #120A1A 0%, #1E0E2D 100%)',
+    '#16A085': 'linear-gradient(135deg, #001A14 0%, #002D24 100%)',
   }
   return map[color] || 'linear-gradient(135deg, #111 0%, #222 100%)'
 }
 
 function getIcon(subject: string) {
-  const map: Record<string, string> = { 수학: '∫', 영어: 'A', 국어: '글', 과학: '⚗', 사회: '🌐', 한국사: '㊙' }
-  return map[subject] || '📚'
+  const map: Record<string, string> = {
+    'TOPIK': 'T',
+    '말하기': '話',
+    '문법': '文',
+    '쓰기': '筆',
+    '한글': '가',
+    '비즈니스': 'B',
+    '읽기': '讀',
+  }
+  return map[subject] || '語'
 }

@@ -1,12 +1,12 @@
 import styles from './InstructorSection.module.css'
 
 const instructors = [
-  { name: '현우진', subject: '수학', color: '#E8002D', students: '58만', rating: '4.9', title: '수학의 神' },
-  { name: '이명학', subject: '영어', color: '#0066CC', students: '42만', rating: '4.8', title: '영어 1등급 제조기' },
-  { name: '김동욱', subject: '국어', color: '#FF6B00', students: '35만', rating: '4.9', title: '국어 독해의 달인' },
-  { name: '한석원', subject: '과학', color: '#00B050', students: '28만', rating: '4.7', title: '통합과학 완벽정복' },
-  { name: '이다지', subject: '한국사', color: '#7B2FBE', students: '45만', rating: '4.9', title: '한국사 스토리텔러' },
-  { name: '신승범', subject: '사회', color: '#0066CC', students: '22만', rating: '4.8', title: '사회탐구 전문가' },
+  { name: '김민지', subject: '문법', color: '#C0392B', students: '18K', rating: '4.9', title: 'TOPIK II 문법 전문가' },
+  { name: '이준호', subject: '말하기', color: '#2980B9', students: '14K', rating: '4.8', title: '회화 집중 훈련' },
+  { name: '박소연', subject: '쓰기', color: '#8E44AD', students: '11K', rating: '4.9', title: 'TOPIK 작문 고득점' },
+  { name: '한태우', subject: '비즈니스', color: '#E67E22', students: '9K', rating: '4.7', title: '직장 한국어 실전' },
+  { name: '최유나', subject: '문화', color: '#16A085', students: '22K', rating: '4.9', title: 'K-문화로 배우는 한국어' },
+  { name: '신동호', subject: '입문', color: '#27AE60', students: '31K', rating: '4.8', title: '한글부터 시작하기' },
 ]
 
 export default function InstructorSection() {
@@ -14,8 +14,8 @@ export default function InstructorSection() {
     <section className="section">
       <div className="container">
         <h2 className="section-title">
-          스타강사 라인업
-          <span>전국 최고의 선생님들</span>
+          강사 라인업
+          <span>원어민 및 전문 한국어 강사진</span>
         </h2>
         <div className={styles.grid}>
           {instructors.map(inst => (
@@ -33,7 +33,7 @@ export default function InstructorSection() {
                 </div>
                 <div className={styles.divider}/>
                 <div className={styles.stat}>
-                  <span className={styles.statVal}>★{inst.rating}</span>
+                  <span className={styles.statVal}>{inst.rating}</span>
                   <span className={styles.statKey}>평점</span>
                 </div>
               </div>

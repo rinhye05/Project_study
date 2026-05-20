@@ -26,18 +26,27 @@
 }
 
 .logo { display: flex; align-items: baseline; gap: 2px; text-decoration: none; flex-shrink: 0; }
-.logoText {
-  font-family: 'Bebas Neue', cursive;
-  font-size: 36px;
+.logoKr {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 22px;
+  font-weight: 700;
   color: var(--primary);
-  letter-spacing: -1px;
-  line-height: 1;
 }
-.logoSub {
-  font-size: 18px;
+.logoEn {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
   font-weight: 900;
   color: var(--navy);
-  letter-spacing: -0.5px;
+  letter-spacing: 3px;
+  margin-left: 6px;
+}
+.navLabel {
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 0 12px;
+  opacity: 0.4;
 }
 
 .searchBox {
@@ -148,18 +157,18 @@
   gap: 0;
 }
 .navInner::-webkit-scrollbar { display: none; }
-.subjectBtn {
-  padding: 13px 20px;
+.levelBtn {
+  padding: 13px 18px;
   color: #bbc5d4;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   background: transparent;
   white-space: nowrap;
   border-bottom: 3px solid transparent;
   transition: all 0.15s;
 }
-.subjectBtn:hover { color: #fff; }
-.subjectBtn.active {
+.levelBtn:hover { color: #fff; }
+.levelBtn.active {
   color: #fff;
   font-weight: 700;
   border-bottom-color: var(--primary);

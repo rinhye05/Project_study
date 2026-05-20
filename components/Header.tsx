@@ -1,18 +1,17 @@
 import { useState } from 'react'
 import styles from './Header.module.css'
 
-const subjects = ['전체', '수학', '영어', '국어', '과학', '사회', '한국사', '논술', '면접']
+const levels = ['전체', '입문', 'TOPIK I (1급)', 'TOPIK I (2급)', 'TOPIK II (3급)', 'TOPIK II (4급)', 'TOPIK II (5-6급)', '비즈니스 한국어']
 
 export default function Header() {
   const [searchQuery, setSearchQuery] = useState('')
-  const [activeSubject, setActiveSubject] = useState('전체')
+  const [activeLevel, setActiveLevel] = useState('전체')
 
   return (
     <header>
-      {/* 상단 유틸리티 바 */}
       <div className={styles.topBar}>
         <div className={`container ${styles.topInner}`}>
-          <span>수능까지 D-<strong>124</strong></span>
+          <span>외국인을 위한 한국어 강의 플랫폼 — English · 中文 · 日本語 · Español 지원</span>
           <div className={styles.topLinks}>
             <a href="#">로그인</a>
             <a href="#">회원가입</a>
@@ -22,24 +21,26 @@ export default function Header() {
         </div>
       </div>
 
-      {/* 메인 헤더 */}
       <div className={styles.mainHeader}>
         <div className={`container ${styles.headerInner}`}>
           <a href="/" className={styles.logo}>
-            <span className={styles.logoText}>MEGA</span>
-            <span className={styles.logoSub}>스터디</span>
+            <span className={styles.logoKr}>한국어</span>
+            <span className={styles.logoEn}>STUDIO</span>
           </a>
 
           <div className={styles.searchBox}>
             <select className={styles.searchCategory}>
-              <option>전 과목</option>
-              <option>수학</option>
-              <option>영어</option>
-              <option>국어</option>
+              <option>전체</option>
+              <option>말하기</option>
+              <option>듣기</option>
+              <option>읽기</option>
+              <option>쓰기</option>
+              <option>문법</option>
+              <option>TOPIK</option>
             </select>
             <input
               type="text"
-              placeholder="강사명, 강좌명, 교재명 검색"
+              placeholder="강사명, 강좌명, 주제 검색..."
               value={searchQuery}
               onChange={e => setSearchQuery(e.target.value)}
               className={styles.searchInput}
@@ -59,21 +60,21 @@ export default function Header() {
               <span className={styles.cartCount}>2</span>
             </a>
             <a href="#" className={styles.loginBtn}>로그인</a>
-            <a href="#" className={styles.joinBtn}>회원가입</a>
+            <a href="#" className={styles.joinBtn}>수강 시작하기</a>
           </div>
         </div>
       </div>
 
-      {/* 과목 네비게이션 */}
       <nav className={styles.subjectNav}>
         <div className={`container ${styles.navInner}`}>
-          {subjects.map(subject => (
+          <span className={styles.navLabel}>LEVEL</span>
+          {levels.map(level => (
             <button
-              key={subject}
-              className={`${styles.subjectBtn} ${activeSubject === subject ? styles.active : ''}`}
-              onClick={() => setActiveSubject(subject)}
+              key={level}
+              className={`${styles.levelBtn} ${activeLevel === level ? styles.active : ''}`}
+              onClick={() => setActiveLevel(level)}
             >
-              {subject}
+              {level}
             </button>
           ))}
           <a href="#" className={styles.allCourses}>전체 강좌 보기 →</a>
