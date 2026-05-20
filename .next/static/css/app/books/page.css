@@ -264,14 +264,10 @@
 .BooksPage_card__2tyTy:hover { transform: translateY(-4px); }
 
 .BooksPage_cover__mcej0 {
-  aspect-ratio: 3/2;
+  aspect-ratio: 3/4;
   background: var(--black);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  padding: 24px;
+  position: relative;
+  overflow: hidden;
 }
 
 .BooksPage_coverLevel__J7sy4 {
