@@ -18,15 +18,16 @@ export default function InstructorsPage() {
           {instructors.map((inst) => (
             <Link key={inst.id} href={`/instructors/${inst.id}`} className={styles.card}>
               <div className={styles.photoWrap}>
-                <Image src={inst.img} alt={inst.name} fill style={{ objectFit: 'cover', objectPosition: 'top center' }} />
-                <div className={styles.fallback}>{inst.initial}</div>
-                <div className={styles.overlay} />
-                <div className={styles.photoBottom}>
-                  <p className={styles.photoName}>{inst.name}</p>
-                  <p className={styles.photoTag}>{inst.tag}</p>
-                </div>
+                <Image
+                  src={inst.img}
+                  alt={inst.name}
+                  fill
+                  style={{ objectFit: 'cover', objectPosition: 'top center' }}
+                />
               </div>
               <div className={styles.info}>
+                <p className={styles.photoName}>{inst.name}</p>
+                <p className={styles.photoTag}>{inst.tag}</p>
                 <p className={styles.subject}>{inst.subject}</p>
                 <ul className={styles.features}>
                   {inst.features.map((f) => (

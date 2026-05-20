@@ -16,3 +16,18 @@
 .features { list-style: none; display: flex; flex-direction: column; gap: 6px; }
 .feature { font-size: 12px; color: var(--gray-700); font-weight: 500; display: flex; align-items: center; gap: 8px; }
 .dot { width: 4px; height: 4px; border-radius: 50%; background: var(--black); flex-shrink: 0; }
+
+.photoName {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 2px;
+}
+
+.photoTag {
+  font-size: 12px;
+  color: var(--gray-400);
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--gray-100);
+}

@@ -11,7 +11,7 @@ export default function InstructorSection() {
           <h2 className={styles.title}>스타 강사진</h2>
           <p className={styles.sub}>Arirang Class 대표 강사들을 만나보세요</p>
         </div>
-        <Link href="#" className={styles.viewAll}>전체 강사 보기 →</Link>
+        <Link href="/instructors" className={styles.viewAll}>전체 강사 보기 →</Link>
       </div>
 
       <div className={styles.grid}>
@@ -24,16 +24,11 @@ export default function InstructorSection() {
                 fill
                 style={{ objectFit: 'cover', objectPosition: 'top center' }}
               />
-              <div className={styles.fallback}>{inst.initial}</div>
-              <div className={styles.overlay} />
-              <div className={styles.photoBottom}>
-                <p className={styles.photoName}>{inst.name}</p>
-                <p className={styles.photoTag}>{inst.tag}</p>
-              </div>
             </div>
 
             <div className={styles.info}>
-              <p className={styles.subject}>{inst.subject}</p>
+              <p className={styles.name}>{inst.name}</p>
+              <p className={styles.tag}>{inst.tag}</p>
               <ul className={styles.features}>
                 {inst.features.map((f) => (
                   <li key={f} className={styles.feature}>

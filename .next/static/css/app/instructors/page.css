@@ -247,3 +247,18 @@
 .InstructorsPage_features__KXnhA { list-style: none; display: flex; flex-direction: column; gap: 6px; }
 .InstructorsPage_feature__YnDHK { font-size: 12px; color: var(--gray-700); font-weight: 500; display: flex; align-items: center; gap: 8px; }
 .InstructorsPage_dot__7bxdt { width: 4px; height: 4px; border-radius: 50%; background: var(--black); flex-shrink: 0; }
+
+.InstructorsPage_photoName__8rY_T {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 2px;
+}
+
+.InstructorsPage_photoTag__L_Wxd {
+  font-size: 12px;
+  color: var(--gray-400);
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--gray-100);
+}

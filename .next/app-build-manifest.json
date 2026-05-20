@@ -30,11 +30,11 @@
       "static/css/app/books/page.css",
       "static/chunks/app/books/page.js"
     ],
-    "/instructors/[id]/page": [
+    "/exam/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/instructors/[id]/page.css",
-      "static/chunks/app/instructors/[id]/page.js"
+      "static/css/app/exam/page.css",
+      "static/chunks/app/exam/page.js"
     ]
   }
 }
