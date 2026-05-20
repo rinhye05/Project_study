@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../styles/CourseSection.module.css';
 
@@ -15,10 +16,7 @@ const courses = [
     rating: '4.9',
     price: '89,000원',
     students: '12,483명',
-    thumbBg: '#1a1a1a',
-    thumbCategory: 'TOPIK I',
-    thumbTitle: '1-2급 완성\n기초부터 합격까지',
-    decoText: 'TOPIK',
+    img: '/images/courses/1.jpg',
   },
   {
     id: 2,
@@ -30,10 +28,7 @@ const courses = [
     rating: '4.8',
     price: '59,000원',
     students: '8,201명',
-    thumbBg: '#2d2d2d',
-    thumbCategory: 'BEGINNER',
-    thumbTitle: '한글부터\n첫 한국어 시작',
-    decoText: '입문',
+    img: '/images/courses/2.jpg',
   },
   {
     id: 3,
@@ -45,10 +40,7 @@ const courses = [
     rating: '5.0',
     price: '99,000원',
     students: '6,774명',
-    thumbBg: '#0a0a0a',
-    thumbCategory: 'TOPIK II WRITING',
-    thumbTitle: '쓰기 54점\n고득점 전략',
-    decoText: '쓰기',
+    img: '/images/courses/3.jpg',
   },
   {
     id: 4,
@@ -60,10 +52,7 @@ const courses = [
     rating: '4.9',
     price: '75,000원',
     students: '9,318명',
-    thumbBg: '#404040',
-    thumbCategory: 'SPEAKING',
-    thumbTitle: '발음 교정부터\n자유회화까지',
-    decoText: '말',
+    img: '/images/courses/4.jpg',
   },
   {
     id: 5,
@@ -75,10 +64,7 @@ const courses = [
     rating: '4.7',
     price: '79,000원',
     students: '7,045명',
-    thumbBg: '#1a1a1a',
-    thumbCategory: 'GRAMMAR',
-    thumbTitle: '중급 문법\n3·4급 핵심 정리',
-    decoText: '문법',
+    img: '/images/courses/5.jpg',
   },
   {
     id: 6,
@@ -90,10 +76,7 @@ const courses = [
     rating: '4.8',
     price: '65,000원',
     students: '11,220명',
-    thumbBg: '#2d2d2d',
-    thumbCategory: 'K-CULTURE',
-    thumbTitle: '드라마·K-POP으로\n배우는 한국어',
-    decoText: 'K',
+    img: '/images/courses/6.jpg',
   },
   {
     id: 7,
@@ -105,10 +88,7 @@ const courses = [
     rating: '4.9',
     price: '85,000원',
     students: '5,601명',
-    thumbBg: '#0a0a0a',
-    thumbCategory: 'BUSINESS',
-    thumbTitle: '직장인 필수\n비즈니스 한국어',
-    decoText: '비즈',
+    img: '/images/courses/7.jpg',
   },
   {
     id: 8,
@@ -120,10 +100,7 @@ const courses = [
     rating: '4.6',
     price: '55,000원',
     students: '14,832명',
-    thumbBg: '#333333',
-    thumbCategory: 'VOCABULARY',
-    thumbTitle: 'TOPIK 필수 어휘\n1500 단어 완성',
-    decoText: '어휘',
+    img: '/images/courses/8.jpg',
   },
 ];
 
@@ -173,28 +150,12 @@ export default function CourseSection() {
           visible.map((course) => (
             <div key={course.id} className={styles.card}>
               <div className={styles.thumb}>
-                <div
-                  className={styles.thumbBg}
-                  style={{ background: course.thumbBg }}
-                >
-                  <span
-                    style={{
-                      fontFamily: 'var(--font-display)',
-                      fontSize: '52px',
-                      color: 'rgba(255,255,255,0.07)',
-                    }}
-                  >
-                    {course.decoText}
-                  </span>
-                </div>
-                <div className={styles.thumbLabel}>
-                  <span className={styles.thumbCategory}>{course.thumbCategory}</span>
-                  <span className={styles.thumbTitle}>
-                    {course.thumbTitle.split('\n').map((line, i) => (
-                      <span key={i} style={{ display: 'block' }}>{line}</span>
-                    ))}
-                  </span>
-                </div>
+                <Image
+                  src={course.img}
+                  alt={course.title}
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
               </div>
               <span className={`${styles.badge} ${badgeClass(course.badgeType)}`}>
                 {course.badge}
