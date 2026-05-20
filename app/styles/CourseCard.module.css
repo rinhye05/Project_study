@@ -1,7 +1,7 @@
 .card { cursor: pointer; transition: transform 0.2s; }
 .card:hover { transform: translateY(-4px); }
 .thumb {
-  aspect-ratio: 16/10;
+  aspect-ratio: 16/9;
   border-radius: 4px;
   overflow: hidden;
   margin-bottom: 14px;
