@@ -80,10 +80,10 @@ function getBg(color: string) {
   const map: Record<string, string> = {
     '#C0392B': 'linear-gradient(135deg, #1A0610 0%, #2D0A1A 100%)',
     '#2980B9': 'linear-gradient(135deg, #061228 0%, #0A1F42 100%)',
-    '#E67E22': 'linear-gradient(135deg, #1A0D00 0%, #2D1600 100%)',
-    '#27AE60': 'linear-gradient(135deg, #001A0D 0%, #002D17 100%)',
     '#8E44AD': 'linear-gradient(135deg, #120A1A 0%, #1E0E2D 100%)',
+    '#E67E22': 'linear-gradient(135deg, #1A0D00 0%, #2D1600 100%)',
     '#16A085': 'linear-gradient(135deg, #001A14 0%, #002D24 100%)',
+    '#27AE60': 'linear-gradient(135deg, #001A0D 0%, #002D17 100%)',
   }
   return map[color] || 'linear-gradient(135deg, #111 0%, #222 100%)'
 }
@@ -92,11 +92,10 @@ function getIcon(subject: string) {
   const map: Record<string, string> = {
     'TOPIK': 'T',
     '말하기': '話',
-    '문법': '文',
     '쓰기': '筆',
-    '한글': '가',
     '비즈니스': 'B',
-    '읽기': '讀',
+    '문화': '韓',
+    '입문': '가',
   }
   return map[subject] || '語'
 }
