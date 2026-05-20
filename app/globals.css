@@ -1,6 +1,7 @@
+/* 변경 후 */
 @font-face {
-  font-family: 'ChosunGU';
-  src: url('/fonts/ChosunGU.TTF') format('truetype');
+  font-family: 'ChosunCentennial';
+  src: url('/fonts/ChosunKg.TTF') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
