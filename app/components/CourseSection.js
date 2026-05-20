@@ -16,7 +16,7 @@ const courses = [
     rating: '4.9',
     price: '89,000원',
     students: '12,483명',
-    img: '/images/courses/1.jpg',
+    img: '/images/courses/1.png',
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const courses = [
     rating: '4.8',
     price: '59,000원',
     students: '8,201명',
-    img: '/images/courses/2.jpg',
+    img: '/images/courses/2.png',
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ const courses = [
     rating: '5.0',
     price: '99,000원',
     students: '6,774명',
-    img: '/images/courses/3.jpg',
+    img: '/images/courses/3.png',
   },
   {
     id: 4,
@@ -52,7 +52,7 @@ const courses = [
     rating: '4.9',
     price: '75,000원',
     students: '9,318명',
-    img: '/images/courses/4.jpg',
+    img: '/images/courses/4.png',
   },
   {
     id: 5,
@@ -64,7 +64,7 @@ const courses = [
     rating: '4.7',
     price: '79,000원',
     students: '7,045명',
-    img: '/images/courses/5.jpg',
+    img: '/images/courses/5.png',
   },
   {
     id: 6,
@@ -76,7 +76,7 @@ const courses = [
     rating: '4.8',
     price: '65,000원',
     students: '11,220명',
-    img: '/images/courses/6.jpg',
+    img: '/images/courses/6.png',
   },
   {
     id: 7,
@@ -88,7 +88,7 @@ const courses = [
     rating: '4.9',
     price: '85,000원',
     students: '5,601명',
-    img: '/images/courses/7.jpg',
+    img: '/images/courses/7.png',
   },
   {
     id: 8,
@@ -100,7 +100,7 @@ const courses = [
     rating: '4.6',
     price: '55,000원',
     students: '14,832명',
-    img: '/images/courses/8.jpg',
+    img: '/images/courses/8.png',
   },
 ];
 
