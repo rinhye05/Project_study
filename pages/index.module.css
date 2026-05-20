@@ -1,0 +1,170 @@
+.utilRow {
+  display: flex;
+  gap: 20px;
+  margin: 24px 0;
+  align-items: stretch;
+}
+
+/* 공지사항 */
+.noticeBox {
+  flex: 1;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.noticeTitle {
+  background: var(--navy);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 10px 16px;
+}
+.noticeList { padding: 4px 0; }
+.noticeItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 16px;
+  border-bottom: 1px solid #f5f5f5;
+}
+.noticeItem:last-child { border-bottom: none; }
+.noticeBadge { flex-shrink: 0; }
+.noticeText {
+  flex: 1;
+  font-size: 13px;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.noticeText:hover { color: var(--primary); }
+.noticeDate { font-size: 11px; color: var(--text-light); flex-shrink: 0; }
+
+/* 빠른 링크 */
+.quickLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 240px;
+  flex-shrink: 0;
+}
+.quickItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 16px;
+  transition: all 0.15s;
+  text-decoration: none;
+}
+.quickItem:hover { border-color: var(--primary); }
+.quickIcon { font-size: 18px; flex-shrink: 0; }
+.quickLabel { font-size: 13px; font-weight: 700; color: var(--navy); flex: 1; }
+.quickSub { font-size: 11px; color: var(--text-light); }
+
+/* 강좌 그리드 */
+.courseGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+.moreWrap { text-align: center; margin-top: 28px; }
+.moreBtn {
+  padding: 12px 40px;
+  background: transparent;
+  border: 2px solid var(--navy);
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--navy);
+  font-family: var(--font);
+  transition: all 0.15s;
+}
+.moreBtn:hover { background: var(--navy); color: #fff; }
+
+/* 이벤트 배너 */
+.eventSection { padding: 20px 0 48px; }
+.eventGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.eventCard {
+  border-radius: 12px;
+  padding: 28px 24px;
+  color: #fff;
+}
+.eventCard h3 {
+  font-size: 20px;
+  line-height: 1.3;
+  margin: 10px 0 8px;
+  font-weight: 500;
+}
+.eventCard h3 strong { font-weight: 900; font-size: 24px; }
+.eventCard p { font-size: 12px; color: rgba(255,255,255,0.6); margin-bottom: 20px; }
+.eventBtn {
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 9px 18px;
+  border-radius: 5px;
+  font-family: var(--font);
+  border: 1px solid rgba(255,255,255,0.2);
+  transition: background 0.15s;
+}
+.eventBtn:hover { background: rgba(255,255,255,0.25); }
+
+/* 수강 후기 */
+.reviewGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.reviewCard {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+}
+.reviewHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.reviewer { display: flex; align-items: center; gap: 10px; }
+.reviewerAvatar {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex; align-items: center; justify-content: center;
+}
+.reviewerName { display: block; font-size: 13px; font-weight: 700; }
+.reviewerSub { display: block; font-size: 11px; color: var(--text-muted); }
+.scoreChange {
+  font-size: 12px; font-weight: 700;
+  color: var(--primary);
+  background: rgba(232,0,45,0.08);
+  padding: 4px 9px; border-radius: 4px;
+  white-space: nowrap;
+}
+.reviewStars { color: var(--gold); font-size: 14px; margin-bottom: 8px; letter-spacing: -1px; }
+.reviewText { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
+
+@media (max-width: 900px) {
+  .eventGrid, .reviewGrid { grid-template-columns: 1fr; }
+  .courseGrid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .utilRow { flex-direction: column; }
+  .quickLinks { width: 100%; flex-direction: row; flex-wrap: wrap; }
+  .quickItem { flex: 1; min-width: 120px; }
+  .courseGrid { grid-template-columns: 1fr; }
+}
