@@ -1,17 +1,98 @@
 .wrap { max-width: 1280px; margin: 0 auto; padding: 56px 32px 80px; }
-.pageHeader { margin-bottom: 40px; border-bottom: 1px solid var(--gray-100); padding-bottom: 28px; }
-.pageTitle { font-family: var(--font-display); font-size: 32px; color: var(--black); margin-bottom: 8px; }
+
+.pageHeader {
+  margin-bottom: 40px;
+  border-bottom: 1px solid var(--gray-100);
+  padding-bottom: 28px;
+}
+
+.pageTitle {
+  font-family: var(--font-display);
+  font-size: 32px;
+  color: var(--black);
+  margin-bottom: 8px;
+}
+
 .pageDesc { font-size: 15px; color: var(--gray-500); }
-.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
-.card { border: 1px solid var(--gray-100); border-radius: 6px; overflow: hidden; transition: transform 0.2s; cursor: pointer; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.card {
+  border: 1px solid var(--gray-100);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
 .card:hover { transform: translateY(-4px); }
-.cover { aspect-ratio: 3/4; background: var(--black); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 24px; }
-.coverLevel { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; color: rgba(255,255,255,0.4); text-transform: uppercase; }
-.coverTitle { font-family: var(--font-display); font-size: 18px; color: var(--white); text-align: center; line-height: 1.4; }
+
+.cover {
+  aspect-ratio: 3/2;
+  background: var(--black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 24px;
+}
+
+.coverLevel {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.4);
+  text-transform: uppercase;
+}
+
+.coverTitle {
+  font-family: var(--font-display);
+  font-size: 18px;
+  color: var(--white);
+  text-align: center;
+  line-height: 1.4;
+}
+
 .info { padding: 20px; }
-.levelBadge { display: inline-block; font-size: 10px; font-weight: 700; background: var(--gray-100); color: var(--gray-600); padding: 3px 8px; border-radius: 2px; margin-bottom: 8px; }
-.title { font-size: 15px; font-weight: 700; color: var(--black); margin-bottom: 8px; line-height: 1.4; }
-.desc { font-size: 13px; color: var(--gray-500); line-height: 1.6; margin-bottom: 16px; }
-.footer { display: flex; justify-content: space-between; align-items: center; padding-top: 14px; border-top: 1px solid var(--gray-100); }
+
+.levelBadge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  background: var(--gray-100);
+  color: var(--gray-600);
+  padding: 3px 8px;
+  border-radius: 2px;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.desc {
+  font-size: 13px;
+  color: var(--gray-500);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14px;
+  border-top: 1px solid var(--gray-100);
+}
+
 .instructor { font-size: 12px; color: var(--gray-400); }
 .price { font-size: 15px; font-weight: 700; color: var(--black); }

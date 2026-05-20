@@ -116,6 +116,7 @@
 .CourseSection_thumb__8ia9D {
   aspect-ratio: 16 / 9;
   border-radius: 4px;
+  height : 200px;
   overflow: hidden;
   margin-bottom: 14px;
   border: 1px solid var(--gray-100);
@@ -127,7 +128,8 @@
 }
 
 .CourseSection_thumbBg__74oni {
-  position: absolute;
+  position: relative;
+  height: 200px;
   inset: 0;
   display: flex;
   align-items: center;

@@ -1,0 +1,330 @@
+/*!************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/styles/Header.module.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************/
+.Header_header__H0gOn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-200);
+  z-index: 100;
+  height: var(--header-height);
+}
+
+.Header_inner__1dffH {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.Header_logo__V0SFW {
+  font-family: var(--font-display);
+  font-size: 22px;
+  letter-spacing: -0.02em;
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.Header_logoMark__J4Cvc {
+  width: 32px;
+  height: 32px;
+  background: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Header_logoMark__J4Cvc span {
+  font-family: var(--font-display);
+  color: var(--white);
+  font-size: 14px;
+}
+
+.Header_searchBar__hB_7i {
+  display: flex;
+  align-items: center;
+  background: var(--gray-50);
+  border: 1px solid var(--gray-200);
+  border-radius: 4px;
+  overflow: hidden;
+  flex: 1 1;
+  max-width: 360px;
+}
+
+.Header_searchInput__P7hMD {
+  flex: 1 1;
+  border: none;
+  background: none;
+  padding: 8px 14px;
+  font-size: 13px;
+  color: var(--black);
+  outline: none;
+}
+
+.Header_searchInput__P7hMD::placeholder {
+  color: var(--gray-400);
+}
+
+.Header_searchBtn__ZuY3h {
+  background: none;
+  border: none;
+  padding: 8px 12px;
+  color: var(--gray-500);
+  font-size: 16px;
+  line-height: 1;
+  transition: color 0.15s;
+}
+
+.Header_searchBtn__ZuY3h:hover {
+  color: var(--black);
+}
+
+.Header_nav__yfD8e {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.Header_navLink__sgliG {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray-700);
+  padding: 8px 14px;
+  border-radius: 4px;
+  transition: color 0.15s, background 0.15s;
+}
+
+.Header_navLink__sgliG:hover {
+  color: var(--black);
+  background: var(--gray-50);
+}
+
+.Header_navLink__sgliG.Header_active___4bpa {
+  color: var(--black);
+  font-weight: 700;
+}
+
+.Header_actions__tjmkZ {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.Header_btnGhost__2jV_q {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--gray-700);
+  padding: 7px 16px;
+  border: 1px solid var(--gray-300);
+  border-radius: 4px;
+  background: none;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.Header_btnGhost__2jV_q:hover {
+  border-color: var(--black);
+  color: var(--black);
+}
+
+.Header_btnSolid__bojCq {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--white);
+  padding: 8px 18px;
+  background: var(--black);
+  border: 1px solid var(--black);
+  border-radius: 4px;
+  transition: background 0.15s;
+}
+
+.Header_btnSolid__bojCq:hover {
+  background: var(--gray-800);
+}
+
+/*!************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/styles/Footer.module.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************/
+.Footer_footer__Dqzgn {
+  background: var(--gray-900);
+  color: var(--gray-400);
+  padding: 48px 0 32px;
+}
+
+.Footer_inner__jLdde {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.Footer_top___uElQ {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  grid-gap: 48px;
+  gap: 48px;
+  margin-bottom: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.Footer_logo__yGCVW {
+  font-family: var(--font-display);
+  font-size: 20px;
+  color: var(--white);
+  margin-bottom: 14px;
+  display: block;
+}
+
+.Footer_desc__Kgrl2 {
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--gray-600);
+  max-width: 240px;
+}
+
+.Footer_colTitle__aifhO {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gray-500);
+  margin-bottom: 16px;
+}
+
+.Footer_col__0kIqI ul {
+  list-style: none;
+}
+
+.Footer_col__0kIqI li {
+  margin-bottom: 10px;
+}
+
+.Footer_col__0kIqI a {
+  font-size: 13px;
+  color: var(--gray-500);
+  transition: color 0.15s;
+}
+
+.Footer_col__0kIqI a:hover {
+  color: var(--white);
+}
+
+.Footer_bottom__aZbIS {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--gray-700);
+}
+
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/styles/BooksPage.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
+.BooksPage_wrap__JX9Ng { max-width: 1280px; margin: 0 auto; padding: 56px 32px 80px; }
+
+.BooksPage_pageHeader__JY4ec {
+  margin-bottom: 40px;
+  border-bottom: 1px solid var(--gray-100);
+  padding-bottom: 28px;
+}
+
+.BooksPage_pageTitle__PvW1L {
+  font-family: var(--font-display);
+  font-size: 32px;
+  color: var(--black);
+  margin-bottom: 8px;
+}
+
+.BooksPage_pageDesc__dTxig { font-size: 15px; color: var(--gray-500); }
+
+.BooksPage_grid__Cpt2G {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 28px;
+  gap: 28px;
+}
+
+.BooksPage_card__2tyTy {
+  border: 1px solid var(--gray-100);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.BooksPage_card__2tyTy:hover { transform: translateY(-4px); }
+
+.BooksPage_cover__mcej0 {
+  aspect-ratio: 3/2;
+  background: var(--black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 24px;
+}
+
+.BooksPage_coverLevel__J7sy4 {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.4);
+  text-transform: uppercase;
+}
+
+.BooksPage_coverTitle__tt8hF {
+  font-family: var(--font-display);
+  font-size: 18px;
+  color: var(--white);
+  text-align: center;
+  line-height: 1.4;
+}
+
+.BooksPage_info__aeXtk { padding: 20px; }
+
+.BooksPage_levelBadge__POGag {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  background: var(--gray-100);
+  color: var(--gray-600);
+  padding: 3px 8px;
+  border-radius: 2px;
+  margin-bottom: 8px;
+}
+
+.BooksPage_title__a5TcD {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.BooksPage_desc__H5Oer {
+  font-size: 13px;
+  color: var(--gray-500);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.BooksPage_footer__mtJm4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14px;
+  border-top: 1px solid var(--gray-100);
+}
+
+.BooksPage_instructor__21KuG { font-size: 12px; color: var(--gray-400); }
+.BooksPage_price__QIqnK { font-size: 15px; font-weight: 700; color: var(--black); }

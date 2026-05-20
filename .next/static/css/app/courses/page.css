@@ -232,7 +232,7 @@
 .CourseCard_card___W_ZD { cursor: pointer; transition: transform 0.2s; }
 .CourseCard_card___W_ZD:hover { transform: translateY(-4px); }
 .CourseCard_thumb__cVaMP {
-  aspect-ratio: 16/9;
+  aspect-ratio: 16/10;
   border-radius: 4px;
   overflow: hidden;
   margin-bottom: 14px;
@@ -263,4 +263,68 @@
 /*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/styles/CoursesPage.module.css ***!
   \*****************************************************************************************************************************************************************************************************************************************************************************/
+.CoursesPage_wrap__NBglt { max-width: 1280px; margin: 0 auto; padding: 56px 32px 80px; }
 
+.CoursesPage_pageHeader__gVPJJ {
+  margin-bottom: 36px;
+  border-bottom: 1px solid var(--gray-100);
+  padding-bottom: 28px;
+}
+
+.CoursesPage_pageTitle__KFJas {
+  font-family: var(--font-display);
+  font-size: 32px;
+  color: var(--black);
+  margin-bottom: 8px;
+}
+
+.CoursesPage_pageDesc__ygXXm {
+  font-size: 15px;
+  color: var(--gray-500);
+}
+
+.CoursesPage_filterRow___NGES {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+
+.CoursesPage_filterBtn__WYoOP {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 7px 16px;
+  border: 1px solid var(--gray-200);
+  border-radius: 4px;
+  background: var(--white);
+  color: var(--gray-600);
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: var(--font-body);
+}
+
+.CoursesPage_filterBtn__WYoOP:hover {
+  border-color: var(--black);
+  color: var(--black);
+}
+
+.CoursesPage_filterBtn__WYoOP.CoursesPage_active__VUOJy {
+  background: var(--black);
+  color: var(--white);
+  border-color: var(--black);
+}
+
+.CoursesPage_grid__oPAeV {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 24px;
+  gap: 24px;
+}
+
+.CoursesPage_empty__KFkAL {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 0;
+  color: var(--gray-400);
+  font-size: 15px;
+}

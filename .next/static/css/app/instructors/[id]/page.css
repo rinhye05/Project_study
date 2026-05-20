@@ -232,7 +232,7 @@
 .CourseCard_card___W_ZD { cursor: pointer; transition: transform 0.2s; }
 .CourseCard_card___W_ZD:hover { transform: translateY(-4px); }
 .CourseCard_thumb__cVaMP {
-  aspect-ratio: 16/9;
+  aspect-ratio: 16/10;
   border-radius: 4px;
   overflow: hidden;
   margin-bottom: 14px;

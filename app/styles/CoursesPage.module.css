@@ -1,0 +1,64 @@
+.wrap { max-width: 1280px; margin: 0 auto; padding: 56px 32px 80px; }
+
+.pageHeader {
+  margin-bottom: 36px;
+  border-bottom: 1px solid var(--gray-100);
+  padding-bottom: 28px;
+}
+
+.pageTitle {
+  font-family: var(--font-display);
+  font-size: 32px;
+  color: var(--black);
+  margin-bottom: 8px;
+}
+
+.pageDesc {
+  font-size: 15px;
+  color: var(--gray-500);
+}
+
+.filterRow {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+
+.filterBtn {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 7px 16px;
+  border: 1px solid var(--gray-200);
+  border-radius: 4px;
+  background: var(--white);
+  color: var(--gray-600);
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: var(--font-body);
+}
+
+.filterBtn:hover {
+  border-color: var(--black);
+  color: var(--black);
+}
+
+.filterBtn.active {
+  background: var(--black);
+  color: var(--white);
+  border-color: var(--black);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 0;
+  color: var(--gray-400);
+  font-size: 15px;
+}
