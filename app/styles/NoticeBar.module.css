@@ -1,0 +1,35 @@
+.bar {
+  background: var(--gray-50);
+  border-bottom: 1px solid var(--gray-100);
+  padding: 10px 0;
+}
+
+.inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 13px;
+}
+
+.label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  background: var(--black);
+  color: var(--white);
+  padding: 2px 8px;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+
+.text {
+  color: var(--gray-600);
+}
+
+.text strong {
+  color: var(--black);
+  font-weight: 600;
+}

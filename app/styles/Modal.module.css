@@ -1,0 +1,195 @@
+.overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 200;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay.open {
+  display: flex;
+}
+
+.modal {
+  background: var(--white);
+  width: 400px;
+  max-width: 90vw;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.header {
+  padding: 24px 28px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  color: var(--black);
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: var(--gray-400);
+  cursor: pointer;
+  line-height: 1;
+  padding: 4px;
+  transition: color 0.15s;
+}
+
+.closeBtn:hover {
+  color: var(--black);
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid var(--gray-100);
+  margin: 20px 28px 0;
+}
+
+.tab {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 0;
+  margin-right: 24px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background: none;
+  color: var(--gray-400);
+  cursor: pointer;
+  transition: color 0.15s;
+  margin-bottom: -1px;
+}
+
+.tab.active {
+  color: var(--black);
+  border-bottom-color: var(--black);
+}
+
+.body {
+  padding: 24px 28px 28px;
+}
+
+.formGroup {
+  margin-bottom: 14px;
+}
+
+.label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--gray-700);
+  margin-bottom: 6px;
+  letter-spacing: 0.02em;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--gray-200);
+  border-radius: 4px;
+  font-size: 14px;
+  color: var(--black);
+  outline: none;
+  transition: border-color 0.15s;
+  background: var(--white);
+}
+
+.input:focus {
+  border-color: var(--black);
+}
+
+.btnFull {
+  width: 100%;
+  padding: 12px;
+  background: var(--black);
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 6px;
+  transition: background 0.15s;
+}
+
+.btnFull:hover {
+  background: var(--gray-800);
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 18px 0;
+  font-size: 12px;
+  color: var(--gray-300);
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--gray-100);
+}
+
+.btnSocial {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-size: 13px;
+  color: var(--gray-700);
+  border: 1px solid var(--gray-300);
+  border-radius: 4px;
+  background: none;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.btnSocial:hover {
+  border-color: var(--black);
+  color: var(--black);
+}
+
+.forgot {
+  text-align: center;
+  font-size: 12px;
+  color: var(--gray-400);
+  margin-top: 14px;
+}
+
+.forgot a {
+  color: var(--gray-500);
+}
+
+.forgot a:hover {
+  color: var(--black);
+}
+
+.agreement {
+  text-align: center;
+  font-size: 11px;
+  color: var(--gray-400);
+  margin-top: 12px;
+  line-height: 1.6;
+}
+
+.agreement a {
+  color: var(--gray-600);
+}
+
+.panel {
+  display: block;
+}
+
+.panel.hidden {
+  display: none;
+}
