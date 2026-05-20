@@ -140,7 +140,7 @@ export default function CourseSection() {
           <h2 className={styles.title}>인기 강좌</h2>
           <p className={styles.sub}>{subtitles[activeCat]}</p>
         </div>
-        <Link href="#" className={styles.viewAll}>전체 보기 →</Link>
+        <Link href="/courses" className={styles.viewAll}>전체 보기 →</Link>
       </div>
 
       <div className={styles.grid}>
@@ -154,6 +154,7 @@ export default function CourseSection() {
                   src={course.img}
                   alt={course.title}
                   fill
+                  sizes="(max-width: 768px) 100vw, 25vw"
                   style={{ objectFit: 'cover' }}
                 />
               </div>
