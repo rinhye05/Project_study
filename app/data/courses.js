@@ -6,7 +6,7 @@ export const courses = [
     title: 'TOPIK I 완전정복 - 1·2급 한 번에 합격',
     instructor: '강민재', instructorId: 'kang-minjae',
     rating: '4.9', price: '89,000원', students: '12,483명',
-    img: '/images/courses/1.jpg',
+    img: '/images/courses/1.png',
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const courses = [
     title: '왕초보 한국어 입문 - 한글부터 기초 회화까지',
     instructor: '정다은', instructorId: 'jeong-daeun',
     rating: '4.8', price: '59,000원', students: '8,201명',
-    img: '/images/courses/2.jpg',
+    img: '/images/courses/2.png',
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const courses = [
     title: 'TOPIK II 쓰기 집중반 - 고득점 작문 완성',
     instructor: '이수민', instructorId: 'lee-sumin',
     rating: '5.0', price: '99,000원', students: '6,774명',
-    img: '/images/courses/3.jpg',
+    img: '/images/courses/3.png',
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ export const courses = [
     title: '실전 한국어 회화 - 발음 교정 & 자유 회화',
     instructor: 'Madina Tursunova', instructorId: 'madina',
     rating: '4.9', price: '75,000원', students: '9,318명',
-    img: '/images/courses/4.jpg',
+    img: '/images/courses/4.png',
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ export const courses = [
     title: '중급 한국어 문법 완성 - 3·4급 핵심 문법 총정리',
     instructor: '강민재', instructorId: 'kang-minjae',
     rating: '4.7', price: '79,000원', students: '7,045명',
-    img: '/images/courses/5.jpg',
+    img: '/images/courses/5.png',
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ export const courses = [
     title: 'K-문화로 배우는 생활 한국어 - 드라마 & K-POP',
     instructor: 'Emma Kim', instructorId: 'emma-kim',
     rating: '4.8', price: '65,000원', students: '11,220명',
-    img: '/images/courses/6.jpg',
+    img: '/images/courses/6.png',
   },
   {
     id: 7,
@@ -60,7 +60,7 @@ export const courses = [
     title: '비즈니스 한국어 - 직장인을 위한 실전 한국어',
     instructor: 'Daniel Lee', instructorId: 'daniel-lee',
     rating: '4.9', price: '85,000원', students: '5,601명',
-    img: '/images/courses/7.jpg',
+    img: '/images/courses/7.png',
   },
   {
     id: 8,
@@ -69,6 +69,6 @@ export const courses = [
     title: 'TOPIK 필수 어휘 1500 - 단기 암기 완성반',
     instructor: '정다은', instructorId: 'jeong-daeun',
     rating: '4.6', price: '55,000원', students: '14,832명',
-    img: '/images/courses/8.jpg',
+    img: '/images/courses/8.png',
   },
 ];

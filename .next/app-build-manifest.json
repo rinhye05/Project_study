@@ -12,23 +12,17 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
+    "/instructors/[id]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/instructors/[id]/page.css",
+      "static/chunks/app/instructors/[id]/page.js"
+    ],
     "/courses/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/courses/page.css",
       "static/chunks/app/courses/page.js"
-    ],
-    "/instructors/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/instructors/page.css",
-      "static/chunks/app/instructors/page.js"
-    ],
-    "/notice/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/notice/page.css",
-      "static/chunks/app/notice/page.js"
     ],
     "/_not-found/page": [
       "static/chunks/webpack.js",
